@@ -76,6 +76,7 @@
     "pluginSettings": {
       "pmdApex": {
         "minPriority": 4,
+        "custom_pmd_ruleset": "category/vf/security.xml,category/vf/bestpractices.xml",
         "failOnViolation": false
       },
       "CICD_gulp-eslint": {
