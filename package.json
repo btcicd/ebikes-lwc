@@ -1,5 +1,5 @@
 {
-    "name": "ebikes-lwc",
+    "name": "@store-sfdcbt-net/CICD_Ebikes",
     "private": true,
     "version": "1.0.0",
     "description": "EBikes Sample App - Lightning Web Components",
@@ -39,17 +39,21 @@
         "prettier-plugin-apex": "^1.6.0",
         "semver": "^7.3.2"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}": [
-            "prettier --write"
-        ],
-        "**/{aura|lwc}/**": [
-            "eslint"
-        ]
+    "commonBuildFramework": {
+    "source": [
+      "force-app/main/default/lwc"
+    ],
+    "test": [
+      "test/main/default/aura"
+    ],
+    "pluginSettings": {
+      "pmdApex": {
+        "minPriority": 4,
+        "failOnViolation": false
+      },
+      "CICD_gulp-eslint": {
+        "failOnIssue": false
+      }
     }
+  }
 }
