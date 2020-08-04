@@ -1,32 +1,15 @@
 {
-    "name": "@store-sfdcbt-net/CICD_Ebikes",
-    "private": true,
-    "version": "1.0.0",
-    "description": "EBikes Sample App - Lightning Web Components",
-    "scripts": {
-        "lint": "npm run lint:lwc && npm run lint:aura",
-        "lint:lwc": "eslint **/lwc/**",
-        "lint:aura": "eslint **/aura/**",
-        "test": "npm run lint && npm run test:unit",
-        "test:unit": "sfdx-lwc-jest",
-        "test:unit:watch": "sfdx-lwc-jest --watch",
-        "test:unit:debug": "sfdx-lwc-jest --debug",
-        "test:unit:coverage": "sfdx-lwc-jest --coverage",
-        "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
-        "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
-        "postinstall": "node bin/check-version.js"
-    },
-    "author": "salesforce.com",
-    "license": "CC0-1.0",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/trailheadapps/ebikes-lwc"
-    },
-    "engines": {
-        "node": ">= 10.13.0",
-        "npm": ">= 6.5.0"
-    },
-   "devDependencies": {
+  "name": "@store-sfdcbt-net/CICD_Ebikes",
+  "version": "1.3.0",
+  "description": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btcicd/ebikes-lwc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
     "@salesforce/eslint-config-lwc": "^0.4.0",
     "@salesforce/sfdx-lwc-jest": "^0.6.2",
     "@store-sfdcbt-net/CICD_gulp-pmd-apex": "latest",
@@ -82,7 +65,8 @@
     "xmlhttprequest": "^1.8.0",
     "string-argv": "^0.3.1"
   },
-    "commonBuildFramework": {
+  "dependencies": {},
+  "commonBuildFramework": {
     "source": [
       "force-app/main/default/lwc"
     ],
