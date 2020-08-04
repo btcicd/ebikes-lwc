@@ -71,7 +71,7 @@
       "force-app/main/default/lwc"
     ],
     "test": [
-      "test/main/default/aura"
+      "force-app/main/default/lwc"
     ],
     "pluginSettings": {
       "pmdApex": {
